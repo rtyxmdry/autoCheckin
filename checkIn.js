@@ -10,7 +10,7 @@ const { getNowTime, pushMsg } = require("./utils");
 const hacpaiSignRequest = async () => {
   console.log(`\n\n------${getNowTime(`toLocaleDateString`)} - 开始签到------\n`);
   const { headers, signInUrl } = nuggets; //签到相关参数
-  console.log(headers)
+  console.log(nuggets)
   const res = await axios({
     url: signInUrl,
     method: `post`,
